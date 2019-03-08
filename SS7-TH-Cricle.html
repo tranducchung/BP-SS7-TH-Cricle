@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+    function Cricle(radius) {
+        this.radius = radius;
+        this.getRadius = function () {
+            return this.radius;
+        };
+        this.getArea = function () {
+            return Math.PI * radius *radius;
+        };
+        this.setRadius = function (radius) {
+            this.radius = radius
+        };
+    }
+    let cricle = new Cricle(2);
+    let radius = cricle.getRadius();
+    let area = cricle.getArea();
+     alert("Cricle have a Radius is "+ radius + " and Area is "+ area);
+    cricle.setRadius(3);
+    alert("Cricle have a Radius is "+ cricle.radius);
+</script>
+</body>
+</html>
